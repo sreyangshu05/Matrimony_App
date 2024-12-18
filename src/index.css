@@ -1,0 +1,20 @@
+/* src/index.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.home-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.signin-container, .profile-creation, .dashboard {
+  margin: 2rem auto;
+  width: 80%;
+  max-width: 400px;
+}
+
+button {
+  margin-top: 1rem;
+}

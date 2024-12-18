@@ -1,0 +1,143 @@
+/* Global reset and typography */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: #f8f9fa; /* Light gray */
+  color: #333; /* Dark text */
+  line-height: 1.6;
+}
+
+h4 {
+  color: #6c63ff; /* Vibrant purple */
+  font-weight: 700;
+}
+
+/* Center the container with responsive spacing */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* Paper styling for form */
+.MuiPaper-root {
+  background: linear-gradient(135deg, #ffffff, #e6e9f0);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px; /* Border radius */
+  overflow: hidden;
+  animation: fadeIn 1.5s ease;
+}
+
+.MuiTypography-h4 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  animation: slideInDown 1s ease;
+}
+
+/* Text fields */
+.MuiOutlinedInput-root {
+  background: white;
+  border-radius: 8px; /* Border radius */
+}
+
+/* Buttons styling */
+.MuiButton-containedPrimary {
+  background: #ff6584; /* Bright pink */
+  color: #fff; /* White text */
+  font-weight: 600;
+  border-radius: 8px; /* Border radius */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.MuiButton-containedPrimary:active {
+  transform: scale(0.98);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.MuiButton-outlined {
+  border-color: #ff6584; /* Bright pink */
+  color: #ff6584; /* Bright pink text */
+  font-weight: 600;
+  border-radius: 8px; /* Border radius */
+}
+
+/* Responsive grid and typography */
+.MuiGrid-container {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.MuiTypography-body2 {
+  font-size: 0.9rem;
+}
+
+/* Button animations */
+.MuiButton-root {
+  transition: transform 0.2s ease;
+}
+
+.MuiButton-root:focus {
+  transform: translateY(-2px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 600px) {
+  .MuiTypography-h4 {
+    font-size: 1.8rem;
+  }
+
+  .MuiButton-root {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  .MuiPaper-root {
+    padding: 1.5rem;
+  }
+}
+
+/* Google Button customization */
+.MuiButton-startIcon {
+  margin-right: 0.5rem;
+  color: #6c63ff; /* Vibrant purple */
+}
+
+/* Form spacing adjustments */
+.MuiBox-root {
+  margin-top: 10px;
+}
+
+.MuiButton-containedPrimary {
+  margin-top: 20px;
+}
+
+.MuiButton-outlined {
+  margin-top: 10px;
+}

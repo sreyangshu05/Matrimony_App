@@ -1,0 +1,102 @@
+/* Global Reset */
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(135deg, #f8f9fa, #e3f2fd); 
+    color: #333;
+  } */
+  
+  /* Container styling */
+  .MuiContainer-root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+  }
+  
+  /* Paper styling for the form */
+  .MuiPaper-root {
+    /* background: linear-gradient(135deg, #ffffff, #f3f4f6); Subtle gradient for elegance */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 12px; /* Rounded corners */
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Typography styling */
+  .MuiTypography-h4 {
+    /* color: #6a1b9a; Vibrant purple for title */
+    font-weight: 700;
+    margin-bottom: 1rem;
+    animation: slideInDown 1.5s ease;
+  }
+  
+  /* TextField styling */
+  .MuiOutlinedInput-root {
+    /* background: #ffffff; White background for inputs */
+    border-radius: 8px; /* Smooth corners */
+  }
+  
+  /* Buttons styling */
+  .MuiButton-containedPrimary {
+    background: linear-gradient(45deg, #ff5722, #ff9800); /* Bright gradient button */
+    color: #ffffff; /* White text for contrast */
+    font-weight: bold;
+    border-radius: 8px; /* Rounded corners */
+    text-transform: capitalize;
+    padding: 12px;
+    font-size: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .MuiButton-containedPrimary:active {
+    transform: scale(0.98);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Responsive grid spacing */
+  .MuiGrid-container {
+    margin-top: 20px;
+  }
+  
+  /* Animation keyframes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes slideInDown {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 600px) {
+    .MuiTypography-h4 {
+      font-size: 1.8rem;
+    }
+  
+    .MuiButton-containedPrimary {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  
+    .MuiPaper-root {
+      padding: 20px;
+    }
+  }
+  
